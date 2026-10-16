@@ -126,7 +126,16 @@ socket probe; a separate provider-authentication error prevented its inference
 acceptance. The original Desktop SSH frontend/discovery test remained incomplete.
 
 On October 15, the existing installation's read-only status probe also succeeded
-with CLI 0.163.0 on macOS. Full fresh Desktop acceptance is still pending.
+with CLI 0.163.0 on macOS.
+
+On October 16, a fresh Desktop SSH chat on macOS successfully called the installed
+bridge to create a test chat, send an idle follow-up, and fork it. Each completed
+reply was independently read back through Desktop's native remote thread tools;
+the fork retained both earlier replies. This closes the create/message/fork
+acceptance gap for that SSH path. A native collaboration subagent also completed
+its marker test; subagent creation is a separate native capability, not a bridge
+tool. Visual sidebar appearance and cross-host handoff were not tested.
+
 These dated results are not a guarantee for every Codex version or host.
 
 ## Remove
